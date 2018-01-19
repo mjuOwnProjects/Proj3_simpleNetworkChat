@@ -1,0 +1,6 @@
+#chat-1
+Server:
+ - separate folder for server files has been created
+ - first listener implementation (simply runs multithread ServerListener)
+ - new properties file for server. Implemented properties: serverName, port
+ - classes for reading configuration and applying it

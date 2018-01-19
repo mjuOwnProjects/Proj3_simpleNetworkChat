@@ -1,3 +1,6 @@
-target/
-.idea/
-simpleNetworkChat.iml
+server/target/
+server/.idea/
+server/simpleNetworkChat.iml
+client/target/
+client/.idea/
+client/simpleNetworkChat.iml
