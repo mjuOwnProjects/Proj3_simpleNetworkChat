@@ -12,7 +12,7 @@ public class Main {
         Configuration serverConfig = new Configuration();
         System.out.println(welcomeMessage(serverConfig));
 
-        try (ServerSocket serverSocket = new ServerSocket(serverConfig.getIntProperty("port"))) {
+        try (ServerSocket serverSocket = new ServerSocket(serverConfig.getIntProperty("server_port"))) {
             while (true) {
                 new ServerListener(serverSocket.accept(), serverConfig).start();
             }
@@ -26,7 +26,7 @@ public class Main {
         try {
             stringBuilder.append("=====================================================");
             stringBuilder.append("\nServer started with name: ");
-            stringBuilder.append(serverConfig.getStringProperty("serverName"));
+            stringBuilder.append(serverConfig.getStringProperty("server_name"));
             stringBuilder.append("\nTCP/IP Socket Listener on port = ");
             stringBuilder.append(serverConfig.getStringProperty("port"));
             stringBuilder.append(", IP = ");
