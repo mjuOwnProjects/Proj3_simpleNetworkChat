@@ -14,4 +14,11 @@ public class User {
         this.userNick = userNick;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getUserNick() {
+        return userNick;
+    }
 }
